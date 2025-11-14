@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~ngx-toastr/toastr';
+
+.owl-carousel .owl-stage-outer{
+  width: 100% !important;
+  height: 100% !important;
+}
+

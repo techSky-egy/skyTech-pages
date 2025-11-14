@@ -1,0 +1,216 @@
+<!-- K12 Hero -->
+<section class="k12-hero">
+  <div class="container">
+
+    <div class="k12-hero__inner">
+      <div class="k12-hero__copy">
+      <h1 class="k12-hero__title">
+        Non-Surgical Beauty,<br />
+        Laser Precision
+      </h1>
+
+      <p class="k12-hero__subtitle">
+        K12 Aesthetic Laser – Redefine Contouring and Skin Tighten
+      </p>
+
+      <div class="k12-hero__actions">
+        <a href="https://wa.me/+2001019421666" class="k12-btn k12-btn--primary">
+          Book Demo
+        </a>
+        <a href="https://drive.google.com/file/d/16OoL6qzHHiFA-uuX_33dJRlFOgM_TksK/view?usp=sharing" target="_blank" rel="noopener" class="k12-btn k12-btn--outline">
+          <span class="k12-btn__icon"><i class="fa fa-download" aria-hidden="true"></i></span>
+          Download Brochure
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="k12-overview">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <!-- Copy (left) -->
+      <div class="col-lg-6">
+        <h2 class="k12ov-title">
+          <span class="k12ov-accent">Device</span> Overview
+        </h2>
+
+        <ul class="k12ov-list">
+          <li>Model: S1-K12</li>
+          <li>Wavelength: 1470nm</li>
+          <li>Power: 12W</li>
+          <li>Modes: Lipolysis, Endolift, Facial Tightening</li>
+          <li>Features: Portable design, fast recovery, non-surgical</li>
+          <li>Mini icon grid of benefits (no scars, quick recovery, natural lift)</li>
+        </ul>
+      </div>
+
+      <!-- Device image (right) -->
+      <div class="col-lg-6 text-end">
+        <figure class="k12ov-device" aria-label="K12 Device">
+          <img
+            src="../../../../assets/images/pro-plus/1k.svg"
+            alt="K12 device"
+            class="k12ov-photo"
+          />
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="products" class="m2-products m2-products-card bg-blue py">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-12 col-sm-12">
+        <div class="section-title wow fadeInUp" style="padding-bottom: 40px;" data-wow-delay="0.1s">
+          <h2 class="do-title do-title-sec"><span class="k12ov-accent">Clinical</span> Applications</h2>
+          <h3>Where K12 Makes a Difference</h3>
+        </div>
+      </div>
+    </div>
+<div class="row g-3 justify-content-center" style="margin-top: 12px;">
+  <div class="col-12">
+      <owl-carousel-o [options]="carouselOpts" class="k12-carousel">
+      <ng-container *ngFor="let card of clinicalApps">
+        <ng-template carouselSlide>
+          <div class="news-thumb products-card new-padd">
+            <img [src]="card.img" class="img-responsive" alt="" />
+            <div class="news-info">
+              <h3>{{ card.title }}</h3>
+              <p>{{ card.text }}</p>
+            </div>
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</div>
+
+  <div class="row g-3" style="margin-top: 20px;">
+      <div class="col-md-12 text-center">
+        <div class="wow fadeInUp new-padd" data-wow-delay="0.8s">
+          <div class="">
+            <a routerLink="/clinical-application" class="k12-btn k12-btn--primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section id="m2-accessories-info" class="m2-accessories py">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-md-6 col-sm-6">
+        <div class="">
+          <img style="width: 100%;" src="../../../../assets/images/pro-plus/1s1.svg" alt="">
+        </div>
+      </div>
+    <div class="col-md-6 col-sm-6" style="display:flex;justify-content:center;">
+  <div class="rt-copy">
+    <h2 class="rt-title">
+      <span class="rt-accent">Results&nbsp;&amp;</span> Training
+    </h2>
+
+    <h3 class="rt-subtitle">What to expect in training</h3>
+
+    <ul class="rt-list">
+      <li>Endolift protocol walkthrough</li>
+      <li>In-clinic training available</li>
+      <li>Staff onboarding support</li>
+    </ul>
+
+    <a href="https://wa.me/+2001019421666" class="rt-btn">Join a Training Session</a>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<section class="py">
+  <div class="container">
+    <section class="ba-gallery">
+  <owl-carousel-o [options]="galleryOpts" class="ba-carousel">
+    <ng-container *ngFor="let src of images">
+      <ng-template carouselSlide>
+        <div class="ba-card">
+          <img [src]="src" class="ba-img owl-lazy" />
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</section>
+  </div>
+</section>
+
+
+
+<section id="products-card" class="m2-products m2-products-card bg-blue py">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-12 col-sm-12">
+        <div class="section-title wow fadeInUp" style="padding-bottom: 40px;" data-wow-delay="0.1s">
+          <h2 class="do-title do-title-sec"><span class="rt-accent">Accessories</span></h2>
+        </div>
+      </div>
+
+      <owl-carousel-o [options]="carouselAccessoriesOpts">
+        <ng-container *ngFor="let c of cards">
+          <ng-template carouselSlide>
+            <div class="news-thumb products-card">
+              <img [src]="c.img" [alt]="c.title" class="ba-img owl-lazy">
+              <div class="news-info news-info-products">
+                <h3>{{ c.title }}</h3>
+                <p *ngIf="c.text">{{ c.text }}</p>
+              </div>
+              <!-- keep or remove the button per your design -->
+              <!-- <div class="news-info-btn">
+                <a routerLink="/clinical-application" class="btn btn-primary-more">Learn More</a>
+              </div> -->
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py">
+  <div class="container">
+    <div class="hero-card k12-card">
+      <div class="row align-items-center gx-4 hero-wrap">
+        <!-- Left: copy -->
+        <div class="col-lg-7 col-md-7">
+          <div class="hero-content">
+            <h1 class="hero-title hero-plus-title">
+              Enhance Your Aesthetic<br />
+              Practice With the K12 Laser<br />
+              Device
+            </h1>
+
+            <div class="hero-actions">
+              <a href="https://wa.me/+2001019421666" class="btn btn-primary">Book Demo</a>
+              <a href="https://drive.google.com/file/d/16OoL6qzHHiFA-uuX_33dJRlFOgM_TksK/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-outline">
+                <span class="btn-icon" aria-hidden="true">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                </span>
+                Download Brochure
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: device -->
+        <div class="col-lg-5 col-md-5 device-image">
+          <figure class="device-card" aria-label="K12 device">
+            <img src="assets/images/pro-plus/k12.svg" alt="K12 device" />
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,156 @@
+.customP{
+  color: #05a9ca;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+
+
+/* Strip background like screenshot */
+.related-products-strip {
+  background: #f1fbff; /* soft blue */
+  padding: 40px 0 50px; /* slim strip */
+}
+
+/* Heading */
+.rp-title {
+  margin: 0 0 18px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #1e1e1e;
+
+  span {
+    color: #05a9ca; /* cyan “Related” */
+  }
+}
+
+/* Grid with two cards centered */
+.rp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 28px;
+  /* max-width: 900px; */
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+/* Card */
+.rp-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 16px;
+
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: 0 6px 16px rgba(5, 169, 202, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(5, 169, 202, 0.14);
+  }
+}
+
+/* Left side: title + button */
+.rp-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.rp-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+/* Button style matches screenshot */
+.rp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  min-width: 120px;
+
+  border: 0;
+  border-radius: 8px;
+  background: #06a7c9;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: filter 0.15s ease, transform 0.05s ease, box-shadow 0.15s ease;
+  box-shadow: 0 6px 12px rgba(6, 167, 201, 0.25);
+
+  &:hover {
+    filter: brightness(0.98);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(6, 167, 201, 0.22);
+  }
+}
+
+/* Right side: product image */
+.rp-card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rp-img {
+  display: block;
+  height: 86px;          /* visually matches small product height */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .rp-grid {
+    grid-template-columns: 1fr; /* stack */
+    gap: 18px;
+    max-width: 560px;
+  }
+
+  .rp-card {
+    grid-template-columns: 1fr auto;
+    padding: 18px;
+  }
+
+  .rp-img {
+    height: 80px;
+  }
+}
+
+@media (max-width: 420px) {
+  .rp-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .rp-card-left {
+    align-items: center;
+  }
+  .rp-img {
+    height: 76px;
+  }
+}
+
+
+.pb-0{
+  padding-bottom:0 !important ;
+}
+
+#m2-accessories{
+      padding-block: 20px;
+}
+
+.pt-5,.pb-5{
+  padding-block: 80px;
+}

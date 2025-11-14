@@ -1,0 +1,468 @@
+<!-- HOME LANDING -->
+<section id="home" class="homeLanding">
+  <div class="container">
+    <div class="landing-content">
+      <div class="col-md-6">
+        <h1>Transforming Laser Surgery & Aesthetics in Egypt</h1>
+        <p class="landing-subtitle">Official Distributor of PIOON Medical Lasers</p>
+                <a href="https://wa.me/+2001019421666" class="section-btn btn btn-primary">
+          Book Demo
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO WE ARE -->
+<section id="who-we-are">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 col-sm-12">
+        <div class="who-image">
+          <img src="../../../../assets/images/home/1.svg" class="img-responsive" alt="Who We Are">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="who-content">
+          <h2 class="section-title">
+            <span class="title-highlight">Who</span> We Are
+          </h2>
+          <p class="section-description">
+            At TECH SKY, we offer top-quality Laser products and services at affordable prices. We are your ultimate destination for Medical Laser Equipment, providing personalized solutions to meet your needs. Our goal is to exceed customer expectations and maintain our legacy of excellence. Contact us today for a complimentary estimate.
+          </p>
+          <a (click)="scrollToElement('contact')" class="section-btn btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PIOON LASER DEVICES - OWL CAROUSEL -->
+<section id="pioon-devices">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title text-start">
+          <span class="title-highlight">PIOON</span> Laser Devices
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <owl-carousel-o [options]="devicesCarouselOptions" class="devices-carousel">
+          <ng-template carouselSlide>
+            <div class="device-card">
+              <div class="device-image-wrapper">
+                <img src="../../../../assets/images/home/S1 Pro Plus.jpg" alt="M2 Surgical Laser System">
+              </div>
+              <div class="device-content">
+                <h3>S1 Pro Plus</h3>
+                <p class="device-tagline">Dual-Wavelength Optimal Configuration Guarding Your Health.</p>
+                <p class="device-description">The Intersection of Technology, Affordability and Stability <a routerLink="/products/s1-pro-plus" class="device-link">More Details</a></p>
+
+              </div>
+            </div>
+          </ng-template>
+
+          <ng-template carouselSlide>
+            <div class="device-card">
+              <div class="device-image-wrapper">
+                <img src="../../../../assets/images/home/K12 Aesthetic Laser.jpg" alt="S1 Pro Multiple Laser System">
+              </div>
+              <div class="device-content">
+                <h3>K12 Aesthetic Laser</h3>
+                <p class="device-tagline">World's TOP1 1470nm Laser System</p>
+                <p class="device-description">Superior Performance and Versatility for Clinical Applications <a routerLink="/products/k12" class="device-link">More Details</a></p>
+
+              </div>
+            </div>
+          </ng-template>
+
+          <!-- <ng-template carouselSlide>
+            <div class="device-card">
+              <div class="device-image-wrapper">
+                <img src="../../../../assets/images/devices/s1-pro-plus.jpg" alt="S1 Pro Plus">
+              </div>
+              <div class="device-content">
+                <h3>MZ Surgical Laser System</h3>
+                <p class="device-tagline">MZ features PIOON’s world-first laser power meter and automatic calibration function. <a  class="device-link">More Details</a></p>
+
+              </div>
+            </div>
+          </ng-template> -->
+          <ng-template carouselSlide>
+            <!-- NEWS THUMB -->
+            <div class="device-card" data-wow-delay="0.6s">
+              <a routerLink="/products/s1-pro" class="device-image-wrapper">
+                <img src="../../../../assets/images/product-2.jpg" alt="">
+              </a>
+              <div class="device-content">
+                <h3><a routerLink="/products/s1-pro">S1 PRO MULTIPLE LASER SYSTEM</a></h3>
+                <p class="device-tagline">Technology makes it possible.</p>
+                <p class="device-description">This is your 1470 nm Laser system with the best results with 12 watt power <a routerLink="/products/s1-pro" class="device-link">More Details</a></p>
+
+          </div>
+      </div>
+          </ng-template>
+          <ng-template carouselSlide>
+              <div class="device-card" data-wow-delay="0.4s">
+                <a routerLink="/products/m2-surgical" class="device-image-wrapper">
+                  <img src="../../../../assets/images/product-1.jpg" alt="">
+                </a>
+                <div class="device-content">
+                  <h3><a routerLink="/products/m2-surgical">M2 SURGICAL LASER SYSTEM</a></h3>
+                  <p class="device-tagline">Meet your Expectations.</p>
+                  <p class="device-description">M2 surgical Laser with 15 Watt Power is one of the most advanced Laser system for
+                    Proctology, Vascular, Lipolysis,
+                    Orthopedic and ENT <a routerLink="/products/m2-surgical" class="device-link">More Details</a></p>
+
+          </div>
+        </div>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLINICAL APPLICATIONS -->
+<section id="clinical-applications">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title text-start">
+          <span class="title-highlight">Clinical</span> Applications
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="applications-grid">
+          <!-- Card 1: Vascular -->
+          <div class="application-card">
+            <div class="card-icon">
+              <img src="../../../../assets/images/home/icons/Vascular.svg" alt="Vascular">
+            </div>
+            <hr class="divider">
+            <h3 class="card-title">Vascular</h3>
+            <div class="card-overlay">
+              <img src="../../../../assets/images/home/Vascular.svg" alt="Vascular" class="overlay-bg">
+              <div class="overlay-content">
+                <p>Varicose veins occur when valves in the veins fail, leading to blood pooling and vessel enlargement.</p>
+              </div>
+            </div>
+          </div>
+          <div class="application-card">
+            <div class="card-icon">
+              <img src="../../../../assets/images/home/icons/Proctology Proctology.svg" alt="Proctology">
+            </div>
+            <hr class="divider">
+            <h3 class="card-title">Proctology</h3>
+            <div class="card-overlay">
+              <img src="../../../../assets/images/home/Proctology.svg" alt="Proctology" class="overlay-bg">
+              <div class="overlay-content">
+                <p>Proctological conditions such as hemorrhoids, anal fistula, and fissures cause pain, bleeding, and discomfort.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3: Gynecology -->
+          <div class="application-card">
+            <div class="card-icon">
+              <img src="../../../../assets/images/home/icons/Gynecology.svg" alt="Gynecology">
+            </div>
+            <hr class="divider">
+            <h3 class="card-title">Gynecology</h3>
+            <div class="card-overlay">
+              <img src="../../../../assets/images/home/Gynecology.svg" alt="Gynecology" class="overlay-bg">
+              <div class="overlay-content">
+                <p>Laser technology is increasingly used in gynecological and cosmetic applications including vaginal tightening, rejuvenation.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: PLDD -->
+          <div class="application-card">
+            <div class="card-icon">
+              <img src="../../../../assets/images/home/icons/PLDD.svg" alt="PLDD">
+            </div>
+            <hr class="divider">
+            <h3 class="card-title">PLDD</h3>
+            <div class="card-overlay">
+              <img src="../../../../assets/images/home/PLDD.svg" alt="PLDD" class="overlay-bg">
+              <div class="overlay-content">
+                <p>PLDD is a minimally invasive spinal procedure for herniated discs causing back pain or sciatica.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Aesthetic -->
+          <div class="application-card">
+            <div class="card-icon">
+              <img src="../../../../assets/images/home/icons/Aesthetic.svg" alt="Aesthetic">
+            </div>
+            <hr class="divider">
+            <h3 class="card-title">Aesthetic</h3>
+            <div class="card-overlay">
+              <img src="../../../../assets/images/home/Aesthetic.svg" alt="Aesthetic" class="overlay-bg">
+              <div class="overlay-content">
+                <p>Laser-assisted contouring and skin tightening stimulate collagen production and target localized fat deposits.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Body Lipolysis -->
+          <div class="application-card">
+            <div class="card-icon">
+              <img src="../../../../assets/images/home/icons/Body Lipolysis.svg" alt="Body Lipolysis">
+            </div>
+            <hr class="divider">
+            <h3 class="card-title">Body Lipolysis</h3>
+            <div class="card-overlay">
+              <img src="../../../../assets/images/home/Body Lipolysis.svg" alt="Body Lipolysis" class="overlay-bg">
+              <div class="overlay-content">
+                <p>Laser-induced selective heat melts stubborn fat that escapes through tiny access holes in the treated area.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-start mt-4">
+          <a [routerLink]="'/clinical-application'" class="section-btn btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINING & WORKSHOPS -->
+<section id="training">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 col-sm-12">
+        <div class="training-image">
+          <img src="../../../../assets/images/TRANING.png" class="img-responsive" alt="Training & Workshops">
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="training-content">
+          <h2 class="section-title">
+            <span class="title-highlight">Training &</span> Workshops
+          </h2>
+          <ul class="training-list">
+            <li><span class="checkmark">✓</span> In-person & online training</li>
+            <li><span class="checkmark">✓</span> Arabic & English</li>
+            <li><span class="checkmark">✓</span> Live surgery demonstrations</li>
+            <li><span class="checkmark">✓</span> ISUCRS & medical event participation</li>
+          </ul>
+          <a routerLink="/workshops" class="section-btn btn btn-primary">Join Our Training</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACCESSORIES & SUPPORT -->
+<section id="accessories">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 col-sm-12">
+        <div class="accessories-content">
+          <h2 class="section-title">
+            <span class="title-highlight">Accessories</span> & Support
+          </h2>
+          <p class="section-description">
+            At Tech Sky, We supply certified accessories + user guides for every device for all of medical laser devices
+          </p>
+          <a routerLink="/products/accessories" class="section-btn btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+          <div class="accessory-item">
+            <img src="../../../../assets/images/ACCESSORIES.png" alt="ENT Handpiece">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LASER FIBERS - OWL CAROUSEL -->
+<section id="laser-fibers-carousel">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title text-start">
+          <span class="title-highlight">Laser</span> Fibers
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <owl-carousel-o [options]="fibersCarouselOptions" class="fibers-carousel">
+          <!-- Slide 1: Disposable Laser Surgery Fiber -->
+          <ng-template carouselSlide>
+            <div class="fiber-card">
+              <h3 class="fiber-title">Disposable Laser Surgery Fiber</h3>
+              <div class="fiber-image">
+                <img src="../../../../assets/images/laser-fiber/Disposable Laser Surgery Fiber.svg" alt="Disposable Laser Surgery Fiber">
+              </div>
+            </div>
+          </ng-template>
+
+          <!-- Slide 2: Reusable Laser Surgery Fiber -->
+          <ng-template carouselSlide>
+            <div class="fiber-card">
+              <h3 class="fiber-title">Reusable Laser Surgery Fiber</h3>
+              <div class="fiber-image">
+                <img src="../../../../assets/images/laser-fiber/Reusable Laser Surgery Fiber.svg" alt="Reusable Laser Surgery Fiber">
+              </div>
+            </div>
+          </ng-template>
+
+          <!-- Slide 3: Disposable Radial Emission Fiber -->
+          <ng-template carouselSlide>
+            <div class="fiber-card">
+              <h3 class="fiber-title">Disposable Radial Emission Fiber</h3>
+              <div class="fiber-image">
+                <img src="../../../../assets/images/laser-fiber/Disposable Radial Emission Fiber.svg" alt="Disposable Radial Emission Fiber">
+              </div>
+            </div>
+          </ng-template>
+          <ng-template carouselSlide>
+            <div class="fiber-card">
+              <h3 class="fiber-title">Disposable Fistula Fiber</h3>
+              <div class="fiber-image">
+                <img src="../../../../assets/images/laser-fiber/Disposable Fistula Fiber.svg" alt="Disposable Fistula Fiber">
+              </div>
+            </div>
+          </ng-template>
+          <ng-template carouselSlide>
+            <div class="fiber-card">
+              <h3 class="fiber-title">Disposable Hemorrhoid Fiber Probe</h3>
+              <div class="fiber-image">
+                <img src="../../../../assets/images/laser-fiber/Disposable Hemorrhoid Fiber Probe.svg" alt="Disposable Hemorrhoid Fiber Probe">
+              </div>
+            </div>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE TECHSKY -->
+<section id="why-choose">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 col-sm-12">
+        <div class="why-content">
+          <h2 class="section-title">
+            <span class="title-highlight">Why</span> Choose Techsky <span class="quote-marks"><img src="../../../assets/images/home/quotation 2 icon.svg"/></span>
+          </h2>
+          <ul class="why-list">
+            <li><span class="checkmark">✓</span> CE/FDA certified</li>
+            <li><span class="checkmark">✓</span> Full device + clinical training</li>
+            <li><span class="checkmark">✓</span> Complete laser portfolio</li>
+            <li><span class="checkmark">✓</span> Trusted by Egypt's top doctors</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="why-images">
+          <div class="image-grid">
+            <div class="image-item">
+              <img src="../../../../assets/images/home/p1.svg" alt="Partnership">
+            </div>
+            <div class="image-item large">
+              <img src="../../../../assets/images/home/p2.svg" alt="Team">
+            </div>
+            <div class="image-item">
+              <img src="../../../../assets/images/home/p3.svg" alt="Client">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT US -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <img src="../../../../assets/images/appointment-image.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <!-- CONTACT FORM HERE -->
+        <form id="appointment-form" [formGroup]="contactForm" (ngSubmit)="submitForm($event)">
+          <!-- SECTION TITLE -->
+          <div class="section-title wow fadeInUp">
+            <h2>Contact Us</h2>
+          </div>
+          <div class="">
+            <div class="col-sm-12 form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" formControlName="name"
+                placeholder="Full Name">
+              <div class="text-danger"
+                *ngIf="(contactForm.controls.name.touched || isFormSubmitted)&& contactForm.controls.name.errors&& contactForm.controls.name.errors.required != null">
+                Name is <strong>Required</strong>
+              </div>
+              <div class="text-danger"
+                *ngIf="(contactForm.controls.name.touched || isFormSubmitted)&& contactForm.controls.name.errors&& contactForm.controls.name.errors.minlength != null">
+                Min length 3 characters
+              </div>
+            </div>
+            <div class="col-sm-12 form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" formControlName="email"
+                placeholder="Your Email">
+              <div class="text-danger"
+                *ngIf="(contactForm.controls.email.touched || isFormSubmitted)&& contactForm.controls.email.errors&& contactForm.controls.email.errors.required != null">
+                Email is <strong>Required</strong>
+              </div>
+              <div class="text-danger"
+                *ngIf="(contactForm.controls.email.touched || isFormSubmitted)&& contactForm.controls.email.errors&& contactForm.controls.email.errors.email != null">
+                Invalid Email Address
+              </div>
+            </div>
+            <div class="col-sm-12 form-group">
+              <label for="mobile">Phone Number</label>
+              <input type="text" class="form-control" id="mobile" name="mobile" formControlName="mobile"
+                placeholder="Phone">
+              <div class="text-danger"
+                *ngIf="(contactForm.controls.mobile.touched || isFormSubmitted)&& contactForm.controls.mobile.errors&& contactForm.controls.mobile.errors.required != null">
+                Phone Number is <strong>Required</strong>
+              </div>
+              <div class="text-danger"
+                *ngIf="(contactForm.controls.mobile.touched || isFormSubmitted)&& contactForm.controls.mobile.errors&& contactForm.controls.mobile.errors.pattern != null">
+                Invalid phone number. Please enter a valid number
+              </div>
+            </div>
+            <div class="col-sm-12 form-group">
+              <label for="Message">Additional Message</label>
+              <textarea class="form-control" rows="5" id="message" name="message" formControlName="message"
+                placeholder="Message"></textarea>
+              <div class="text-danger"
+                *ngIf="(contactForm.controls.message.touched || isFormSubmitted)&& contactForm.controls.message.errors&& contactForm.controls.message.errors.maxlength != null">
+                Max length 200 characters
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <button type="submit" class="section-btn btn btn-primary" style="width: 100%;padding-block: 12px;"
+                id="cf-submit" name="submit">Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOOGLE MAP -->
+<section id="google-map">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.9061505016048!2d31.1954115!3d30.0395502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847de5da4b3bd%3A0xa9a4f32d90bdd820!2zVGVjaHNreSBDb-KAmSB8INiq2YMg2LPZg9in2Yo!5e0!3m2!1sen!2sus!4v1703271270224!5m2!1sen!2sus"
+    width="100%" height="350" style="border:0;" frameborder="0" allowfullscreen="allow" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>

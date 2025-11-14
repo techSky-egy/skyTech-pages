@@ -1,0 +1,442 @@
+
+.hero-copy{ max-width: 680px; }
+
+.hero-title{
+  /* Desktop ≈ 60–64px, tablet ≈ 48–56px, mobile ≈ 36–40px */
+  font-size: clamp(36px, 4.5vw + 8px, 50px);
+  line-height: 1.2;                  /* tight like the mock */
+  font-weight: 800;
+  letter-spacing: 0.4px;              /* a hair of tracking */
+  color: #ffffff !important;                      /* pure white as in design */
+  margin: 0 0 16px;
+}
+.hero-title span{ display:block; }     /* force the two-line break */
+
+/* Subtitle: white with slight transparency and compact spacing */
+.hero-subtitle{
+  font-size: clamp(16px, 1.1vw + 12px, 18px);
+  line-height: 1.28;
+  font-weight: 600;
+  color: rgba(255,255,255,.95);
+  margin: 12px 0 28px;
+}
+
+/* Buttons row spacing */
+.hero-actions{ display:flex; gap: 14px;margin-bottom: 10px; }
+
+/* Button base */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding: 14px 24px;                 /* a bit taller like mock */
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration:none;
+  line-height: 1;
+  transition: filter .2s ease, background .2s ease, border-color .2s ease;
+}
+
+/* Primary (Book Demo): white bg + teal text */
+.btn-primary{
+  background:#ffffff;
+  color:#11B7C9;                       /* teal from design */
+  border:2px solid #ffffff;            /* crisp edge on gradient */
+  box-shadow: 0 1px 0 rgba(0,0,0,.04);
+}
+.btn-primary:hover{
+  filter: brightness(.98);
+  background:#F8FEFF;
+  border-color:#F8FEFF;
+}
+
+/* Secondary (Download Brochure): white border + white text */
+.btn-outline{
+  background:transparent;
+  color:#ffffff;
+  border:2px solid rgba(255,255,255,.9);
+}
+.btn-outline:hover{
+  background: rgba(255,255,255,.12);
+  border-color:#ffffff;
+}
+
+/* Icons inherit color so they match (white on outline, teal on primary) */
+.btn .btn-icon{
+  color: currentColor;
+  font-size: 16px;                     /* visual balance with label */
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Accent line under buttons: thin white line like mock */
+.hero-accent{
+  height: 3px;
+  background: rgba(255,255,255,.92);
+  max-width: 72%;
+  margin: 26px 0 0;
+}
+
+/* Layout height & centering, kept from your tuning but slightly taller */
+.landing-hero{
+  min-height: clamp(380px, 60vh, 600px);
+  display:grid;
+  align-items:center;
+}
+
+/* Optional: ensure the left text stays left-aligned even on wide */
+@media (min-width: 992px){
+  .landing-hero{ grid-template-columns: 1.2fr 1fr; gap: 2rem; }
+}
+
+
+.m2-Surgical-landing{
+  height: unset !important;
+}
+
+
+/* brighter cyan like the mock */
+.do-title-accent{ color:#12C0D0; }   /* try #12C0D0 / #11B7C9 if you prefer */
+.do-title{ color:#0E2336; }          /* keep “Overview” dark navy */
+
+/* turn off normal bullets */
+.do-list{ list-style:none; margin:0; padding:0; color:#344256; }
+
+/* spacing & baseline like the mock */
+.do-list li{
+  position:relative;
+  padding-left:28px;        /* room for the square */
+  margin:12px 0;            /* vertical rhythm */
+  line-height:1.5;
+}
+
+/* square marker (not a round bullet) */
+.do-list li::before{
+  content:'';
+  position:absolute;
+  left:0;
+  top:0.6em;                /* baseline align */
+  width:10px;
+  height:10px;
+  background:#2E3A44;       /* dark square */
+  border-radius:2px;        /* slight rounding like the mock */
+  transform:translateY(-50%);
+}
+
+/* label color weight */
+.do-list strong{ color:#0E2336; font-weight:700; }
+
+.m2-accessories{
+  padding-block: 128px !important;
+}
+
+.do-title-sec{
+  text-align: center;
+}
+
+
+#products .products-card{
+  background-color: #fff !important;
+}
+
+.news-thumb{
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    border-radius:17px;
+    -webkit-border-radius:17px;
+    -moz-border-radius:17px;
+    -ms-border-radius:17px;
+    -o-border-radius:17px;
+  }
+
+  .btn-primary-more{
+    background-color: #0ea7c8 !important;
+    color: #fff !important;
+  }
+  .btn-primary-more:hover{
+    background-color: #0b819c !important;
+    color: #fff !important;
+  }
+.news-info{
+  padding-inline: 0 !important;
+  height: auto !important;
+}
+
+
+/* Title */
+.rt-title{
+  margin: 20px 0 14px;
+  font-weight: 800;
+  color:#0E2336;               /* dark navy */
+  font-size: clamp(28px, 3.2vw + 8px, 44px);
+  line-height: 1.1;
+}
+.rt-accent{ color:#12C0D0; }   /* cyan “Results &” */
+
+/* Subtitle */
+.rt-subtitle{
+  margin: 6px 0 16px;
+  font-weight: 700;
+  color:#0E2336;
+  font-size: clamp(18px, 1.1vw + 12px, 28px);
+}
+
+/* Check list — custom teal checks */
+.rt-list{
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  color:#344256;
+}
+.rt-list li{
+  position: relative;
+  padding-left: 34px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+/* inline SVG check as background (teal) */
+.rt-list li::before{
+  content:'';
+  position:absolute;
+  left:0; top:0.85em; transform:translateY(-50%);
+  width:18px; height:18px;
+  background: url("data:image/svg+xml;utf8,\<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2312C0D0' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'>\<polyline points='20 6 9 17 4 12'/></svg>") no-repeat center / contain;
+}
+
+/* CTA Button (teal, rounded, white text) */
+.rt-btn{
+  display:inline-block;
+  padding: 12px 22px;
+  border-radius: 12px;
+  background:#12C0D0;
+  color:#fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.rt-btn:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(18,192,208,.24);
+}
+
+/* Container width for the copy block */
+.rt-copy{ max-width: 520px; }
+
+
+/* card look similar to the design */
+.products-card{
+  background:#fff;
+  border-radius:16px;
+  box-shadow: 0 6px 18px rgba(21, 60, 114, 0.08);
+  overflow:hidden;
+  padding: 18px;
+}
+
+.products-card img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:12px;
+  margin-bottom: 12px;
+}
+
+.products-card h3{
+  font-size: 20px;
+  line-height: 1.3;
+  color: #0E2A3B; /* deep navy like mock */
+  margin: 0;
+}
+
+.owl-theme .owl-dots,
+.owl-theme .owl-nav { display:none !important; }
+
+
+/* ——— Slide/card reset: no background box ——— */
+.products-card,
+.news-thumb{
+  position: relative;
+  background: transparent !important;
+  box-shadow: none !important;
+  /* padding: 0 !important; */
+  border: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform .2s ease, filter .2s ease;
+}
+
+/* Full-bleed image inside the slide */
+.products-card img,
+.news-thumb img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Soft overlay to help text readability without darkening too much */
+.news-thumb::after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Title on top of the image – top-left like the mock */
+.news-info-products{
+  position: absolute;
+  top: 30px;
+  left: 42px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  padding-inline: 10px !important;
+}
+
+/* Title style (matches dark navy from design and stays readable) */
+.news-info-products h3{
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #0E2A3B;                    /* deep navy like the design */
+  text-shadow: 0 1px 0 rgba(255,255,255,.65);  /* subtle edge for light images */
+}
+
+/* Hide the optional description/button (design doesn’t show it) */
+.news-info-products p,
+.news-info-products-btn{
+  display: none !important;
+}
+
+/* Optional: slight lift on hover for a polished feel */
+.news-thumb:hover{
+  transform: translateY(-2px);
+  filter: drop-shadow(0 8px 18px rgba(21, 60, 114, 0.12));
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+}
+
+/* Optional: keep Owl from adding any default dots/nav visual space */
+.owl-theme .owl-dots,
+.owl-theme .owl-nav{ display: none !important; }
+
+.news-thumb.products-card{
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.news-info-products h3{
+  font-size: 16px !important;
+  font-weight: 500;
+}
+
+#products-card{
+  padding-block: 50px !important;
+}
+
+.news-thumb.products-card{
+  padding: 0 !important;
+}
+
+
+/* ==== Teal card with background artwork ==== */
+.k12-card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  padding: 40px;
+  background: #06a9c2;                  /* teal body of the card */
+}
+.device-image{
+text-align: end;
+}
+/* Background image painted on the card itself */
+.k12-card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(../../../../assets/images/pro-plus/convrsition_section.svg)
+              right center / cover no-repeat;
+  z-index: 0;                           /* stays behind content */
+}
+
+/* Make real content sit above the background image */
+.k12-card .hero-wrap,
+.k12-card .hero-content,
+.k12-card .device-card{
+  position: relative;
+  z-index: 1;
+}
+
+/* ====== Typography ====== */
+.hero-title{
+  margin: 0 0 clamp(12px,1.4vw,18px) 0;
+  font-weight: 800;
+  letter-spacing: .2px;
+  line-height: 1.12;
+  color: #fff;
+  font-size: clamp(28px, 3.8vw + 8px, 52px);  /* desktop ≈56 */
+}
+.hero-plus-title{
+  font-size: 40px !important;
+}
+
+.hero-actions{
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+
+/* ====== Mobile/Tablet stacking ====== */
+@media (max-width: 991.98px){
+  .hero-title,.hero-plus-title{ font-size: clamp(24px, 3.6vw + 8px, 38px); }
+}
+
+@media (max-width: 575.98px){
+  /* Stack: device on top, text below */
+  .hero-wrap{
+    display: flex;
+    flex-direction: column;
+  }
+  .device-card{
+    order: 0;
+    margin: 8px auto 12px;               /* center device on phones */
+    padding: 10px;
+  }
+  .device-card img{ width: clamp(220px, 72vw, 400px); }
+  .hero-content{ padding: 0 6px; }
+  .hero-title,.hero-plus-title{
+    font-size: clamp(18px, 4.8vw + 6px, 24px);
+    line-height: 1.14;
+  }
+}
+
+/* (Optional) match your existing button styles */
+.btn{
+  display:inline-flex; align-items:center; gap:10px;
+  padding: 14px 24px; border-radius: 12px; font-weight:700;
+  text-decoration:none; line-height:1; transition:.2s ease;
+}
+.btn-primary{ background:#fff; color:#11B7C9; border:2px solid #fff; }
+.btn-primary:hover{ background:#F8FEFF; border-color:#F8FEFF; }
+.btn-outline{ background:transparent; color:#fff; border:2px solid rgba(255,255,255,.9); }
+.btn-outline:hover{ background:rgba(255,255,255,.12); border-color:#fff; }
+.btn-icon{ color: currentColor; font-size:16px; line-height:1; display:inline-flex; }
+
+.row.align-items-center.gx-4.hero-wrap{
+  display: flex;
+  align-items: center;
+}
+
+.k12-hero{
+  padding-block: 65px !important;
+}
+
+.news-thumb.products-card.new-padd{
+  padding: 18px !important;
+}

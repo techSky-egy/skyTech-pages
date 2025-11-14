@@ -1,0 +1,520 @@
+/* ====== K12 Hero ====== */
+.k12-hero{
+  /* Background image (right aligned) with a soft white-to-transparent veil
+     so the left text stays highly readable like the mock */
+     background-image: url(../../../../assets/images/pro-plus/k12-landing.svg);
+     background-position: center center;
+     background-repeat: no-repeat;
+      background-size: cover;
+  /* full-bleed band */
+  /* width: 100%; */
+  /* min-height: clamp(420px, 60vh, 680px); */
+  display: block;
+}
+
+/* content wrapper with pleasant insets */
+.k12-hero__inner{
+  margin: 0 auto;
+padding: 90px 0;
+  display: grid;
+  align-items: center;
+  min-height: inherit;
+}
+
+/* Title */
+.k12-hero__title{
+  margin: 0 0 clamp(10px, 1.2vw, 16px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: .2px;
+  color: #08aac2;                 /* teal from the design */
+  font-size: clamp(28px, 4.2vw, 50px);
+}
+
+/* Subtitle */
+.k12-hero__subtitle{
+  margin: 0 0 clamp(16px, 2vw, 24px);
+  color: #0e2336;
+  font-weight: 700;
+  font-size: clamp(16px, 1.2vw + 10px, 18px);
+  line-height: 1.35;
+}
+
+/* Actions (buttons) */
+.k12-hero__actions{
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.k12-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1;
+  transition: .2s ease;
+  font-size: clamp(14px, .9vw + 10px, 16px);
+}
+.k12-btn__icon{ font-size: 16px; line-height: 1; }
+
+/* Primary (solid teal) */
+.k12-btn--primary{
+  background: #0db7c6;
+  color: #fff;
+  border: 2px solid #0db7c6;
+}
+.k12-btn--primary:hover{
+  filter: brightness(.96);
+}
+
+/* Outline (teal border) */
+.k12-btn--outline{
+  background: transparent;
+  color: #0db7c6;
+  border: 2px solid rgba(13,183,198,.85);
+}
+.k12-btn--outline:hover{
+  background: rgba(13,183,198,.08);
+  border-color: #0db7c6;
+}
+
+/* ====== Responsive tweaks ====== */
+@media (max-width: 992px){
+  .k12-hero{
+    /* keep the face but allow more text area on tablets */
+    background-position: 70% center;
+  }
+  .k12-hero__title{ font-size: clamp(26px, 4.6vw, 48px); }
+}
+
+@media (max-width: 640px){
+  .k12-hero__inner{ padding: 22px 18px; }
+  .k12-hero__title{
+    font-size: clamp(22px, 7vw, 34px);
+    line-height: 1.14;
+  }
+  .k12-hero__subtitle{
+    font-size: clamp(14px, 4vw, 18px);
+    font-weight: 600;
+  }
+}
+
+
+
+/* ====== Device Overview (K12) ====== */
+.k12-overview{ padding: clamp(36px, 6vw, 93px) 0; }
+
+/* Heading */
+.k12ov-title{
+  margin: 0 0 clamp(14px, 2vw, 20px);
+  font-weight: 800;
+  line-height: 1.1;
+  color: #0E2336;                     /* dark navy */
+  font-size: clamp(26px, 2.8vw + 8px, 38px);
+}
+
+/* List */
+.k12ov-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #344256;
+  font-size: clamp(16px, 1.2vw + 10px, 19px);
+  line-height: 1.65;
+}
+.k12ov-list li{
+  position: relative;
+  padding-left: 28px;                 /* room for the square bullet */
+  margin: 8px 0;
+}
+.k12ov-list li::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: .82em;                         /* baseline align */
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #2E3A44;               /* dark square */
+  border-radius: 2px;
+}
+.k12ov-list strong{ color: #0E2336; font-weight: 800; }
+
+/* Highlight the “Features:” label like the mock */
+.k12ov-hl{
+  display: inline-block;
+  background: rgba(18,192,208,.16);
+  color: #0E2336;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-right: 6px;
+}
+
+/* Teal rounded slab behind the photo */
+.k12ov-slab{
+  position: absolute;
+  inset: clamp(6px, 2vw, 18px);
+  border-radius: 22px;
+  opacity: .9;
+}
+
+/* ====== Responsive tweaks ====== */
+@media (max-width: 991.98px){
+  .k12ov-device{ min-height: 300px; }
+}
+
+@media (max-width: 575.98px){
+  .k12-overview{ padding: 36px 0 48px; }
+  .k12ov-photo{ width: min(92%, 420px); }
+  .k12ov-slab{ inset: 10px; border-radius: 18px; }
+}
+
+.text-end{
+  text-align: end !important;
+}
+
+.k12ov-accent{ color:#12C0D0; }
+
+
+#products .products-card{
+  background-color: #fff !important;
+}
+
+.news-thumb{
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    border-radius:17px;
+    -webkit-border-radius:17px;
+    -moz-border-radius:17px;
+    -ms-border-radius:17px;
+    -o-border-radius:17px;
+  }
+
+  .btn-primary-more{
+    background-color: #0ea7c8 !important;
+    color: #fff !important;
+  }
+  .btn-primary-more:hover{
+    background-color: #0b819c !important;
+    color: #fff !important;
+  }
+.news-info{
+  padding-inline: 0 !important;
+  /* height: auto !important; */
+}
+
+.do-title.do-title-sec{
+  text-align: center !important;
+}
+
+.news-info h3{
+color: #12C0D0 !important;
+font-size: 23px;
+font-weight: 500;
+}
+
+
+/* Title */
+.rt-title{
+  margin: 20px 0 14px;
+  font-weight: 800;
+  color:#0E2336;               /* dark navy */
+  font-size: clamp(28px, 3.2vw + 8px, 44px);
+  line-height: 1.1;
+}
+.rt-accent{ color:#12C0D0; }   /* cyan “Results &” */
+
+/* Subtitle */
+.rt-subtitle{
+  margin: 6px 0 16px;
+  font-weight: 700;
+  color:#0E2336;
+  font-size: clamp(18px, 1.1vw + 12px, 28px);
+}
+
+/* Check list — custom teal checks */
+.rt-list{
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  color:#344256;
+}
+.rt-list li{
+  position: relative;
+  padding-left: 34px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+/* inline SVG check as background (teal) */
+.rt-list li::before{
+  content:'';
+  position:absolute;
+  left:0; top:0.85em; transform:translateY(-50%);
+  width:18px; height:18px;
+  background: url("data:image/svg+xml;utf8,\<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2312C0D0' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'>\<polyline points='20 6 9 17 4 12'/></svg>") no-repeat center / contain;
+}
+
+/* CTA Button (teal, rounded, white text) */
+.rt-btn{
+  display:inline-block;
+  padding: 12px 22px;
+  border-radius: 12px;
+  background:#12C0D0;
+  color:#fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.rt-btn:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(18,192,208,.24);
+}
+
+/* Container width for the copy block */
+.rt-copy{ max-width: 520px; }
+
+.products-card,
+.news-thumb{
+  position: relative;
+  background: transparent !important;
+  box-shadow: none !important;
+  /* padding: 0 !important; */
+  border: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform .2s ease, filter .2s ease;
+}
+
+/* Full-bleed image inside the slide */
+.products-card img,
+.news-thumb img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Soft overlay to help text readability without darkening too much */
+.news-thumb::after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Title on top of the image – top-left like the mock */
+.news-info-products{
+  position: absolute;
+  top: 30px;
+  left: 42px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  padding-inline: 10px !important;
+}
+
+/* Title style (matches dark navy from design and stays readable) */
+.news-info-products h3{
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #0E2A3B !important;                    /* deep navy like the design */
+  text-shadow: 0 1px 0 rgba(255,255,255,.65);  /* subtle edge for light images */
+}
+
+/* Hide the optional description/button (design doesn’t show it) */
+.news-info-products p,
+.news-info-products-btn{
+  display: none !important;
+}
+
+/* Optional: slight lift on hover for a polished feel */
+.news-thumb:hover{
+  transform: translateY(-2px);
+  filter: drop-shadow(0 8px 18px rgba(21, 60, 114, 0.12));
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+}
+
+/* Optional: keep Owl from adding any default dots/nav visual space */
+.owl-theme .owl-dots,
+.owl-theme .owl-nav{ display: none !important; }
+
+.news-thumb.products-card{
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.news-info-products h3{
+  font-size: 16px !important;
+  font-weight: 500;
+}
+
+#products-card{
+  padding-block: 50px !important;
+}
+
+.news-thumb.products-card{
+  padding: 0 !important;
+}
+
+
+/* ==== Teal card with background artwork ==== */
+.k12-card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  padding: 40px;
+  background: #06a9c2;                  /* teal body of the card */
+}
+.device-image{
+text-align: end;
+}
+/* Background image painted on the card itself */
+.k12-card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(../../../../assets/images/pro-plus/convrsition_section.svg)
+              right center / cover no-repeat;
+  z-index: 0;                           /* stays behind content */
+}
+
+/* Make real content sit above the background image */
+.k12-card .hero-wrap,
+.k12-card .hero-content,
+.k12-card .device-card{
+  position: relative;
+  z-index: 1;
+}
+
+/* ====== Typography ====== */
+.hero-title{
+  margin: 0 0 clamp(12px,1.4vw,18px) 0;
+  font-weight: 800;
+  letter-spacing: .2px;
+  line-height: 1.12;
+  color: #fff;
+  font-size: clamp(28px, 3.8vw + 8px, 52px);  /* desktop ≈56 */
+}
+.hero-plus-title{
+  font-size: 40px !important;
+}
+
+.hero-actions{
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+
+/* ====== Mobile/Tablet stacking ====== */
+@media (max-width: 991.98px){
+  .hero-title,.hero-plus-title{ font-size: clamp(24px, 3.6vw + 8px, 38px); }
+}
+
+@media (max-width: 575.98px){
+  /* Stack: device on top, text below */
+  .hero-wrap{
+    display: flex;
+    flex-direction: column;
+  }
+  .device-card{
+    order: 0;
+    margin: 8px auto 12px;               /* center device on phones */
+    padding: 10px;
+  }
+  .device-card img{ width: clamp(220px, 72vw, 400px); }
+  .hero-content{ padding: 0 6px; }
+  .hero-title,.hero-plus-title{
+    font-size: clamp(18px, 4.8vw + 6px, 24px);
+    line-height: 1.14;
+  }
+}
+
+/* (Optional) match your existing button styles */
+.btn{
+  display:inline-flex; align-items:center; gap:10px;
+  padding: 14px 24px; border-radius: 12px; font-weight:700;
+  text-decoration:none; line-height:1; transition:.2s ease;
+}
+.btn-primary{ background:#fff; color:#11B7C9; border:2px solid #fff; }
+.btn-primary:hover{ background:#F8FEFF; border-color:#F8FEFF; }
+.btn-outline{ background:transparent; color:#fff; border:2px solid rgba(255,255,255,.9); }
+.btn-outline:hover{ background:rgba(255,255,255,.12); border-color:#fff; }
+.btn-icon{ color: currentColor; font-size:16px; line-height:1; display:inline-flex; }
+
+.row.align-items-center.gx-4.hero-wrap{
+  display: flex;
+  align-items: center;
+}
+
+.k12-hero{
+  padding-block: 65px !important;
+}
+
+.news-thumb.products-card.new-padd{
+  padding: 18px !important;
+}
+
+.py{
+  padding-block: 65px;
+}
+
+/* container spacing (optional) */
+.ba-gallery { padding: 8px 12px; }
+
+/* each slide card */
+.ba-card {
+  width: 100%;
+  height: 220px;           /* ← fix the visual height */
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f6f7f9;
+}
+
+/* images fill card nicely */
+.ba-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* crop nicely */
+  display: block;
+  border-radius: 14px;     /* keep rounded */
+}
+
+/* nicer nav buttons */
+.owl-nav .owl-prev, .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.owl-nav .owl-prev { left: -6px; }
+.owl-nav .owl-next { right: -6px; }
+
+.owl-nav-btn {
+  display: inline-block;
+  width: 34px; height: 34px; line-height: 34px;
+  text-align: center; border-radius: 50%;
+  background: rgba(0,0,0,.08);
+  font-size: 18px;
+}
+
+/* smaller dots space */
+.owl-dots { margin-top: 10px; }
+
+/* >>> “cursor” behavior (grab while dragging) */
+.owl-stage { cursor: grab; }
+.owl-stage:active { cursor: grabbing; }
+
+/* tweak heights per breakpoint */
+@media (min-width: 768px) { .ba-card { height: 260px; } }
+@media (min-width: 1200px) { .ba-card { height: 300px; } }
