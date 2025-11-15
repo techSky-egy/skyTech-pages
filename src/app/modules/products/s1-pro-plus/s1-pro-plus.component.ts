@@ -10,9 +10,8 @@ export class S1ProPlusComponent {
  cards = [
     { img: 'assets/images/pro-plus/2-ring radial fiber.svg',      title: '2–ring radial fiber (primary)', text: '' },
     { img: 'assets/images/pro-plus/Bare fiber (980nm).svg',       title: 'Bare fiber (980nm)',             text: '' },
-    { img: 'assets/images/pro-plus/2-ring radial fiber.svg',      title: '2–ring radial fiber (primary)', text: '' },
-    { img: 'assets/images/pro-plus/Bare fiber (980nm).svg',       title: 'Bare fiber (980nm)',             text: '' },
-    { img: 'assets/images/pro-plus/2-ring radial fiber.svg',      title: '2–ring radial fiber (primary)', text: '' },
+    { img: 'assets/images/pro-plus/Lipo Handpiece.svg',       title: 'Lipo Handpiece',             text: '' },
+    { img: 'assets/images/pro-plus/Lipo Handpiece Pro.svg',       title: 'Lipo Handpiece Pro',             text: '' }
     // add more items as needed…
   ];
 
