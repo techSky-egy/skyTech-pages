@@ -21,7 +21,7 @@ export class WorkshopComponent implements OnInit {
     // Old workshops (6 to 1) - displayed first
     {
       id: 1,
-      title: 'Laser in Proctology Workshop - Minia University',
+      title: 'Laser in Proctology Workshop Hemorrhoids, Fissure, and Fistula at the Liver and Gastrointestinal Hospital, Minia University.',
       description: `The Laser in Proctology Workshop: Hemorrhoids, Fissure, and Fistula was successfully concluded after a productive training day that combined scientific lectures with hands-on clinical practice at the Liver and Gastrointestinal Hospital, Minia University.
 
 The workshop featured active participation and in-depth scientific discussions, along with a comprehensive presentation of the latest laser techniques in proctologic surgery, enabling participating physicians to explore modern treatment approaches and practical applications.
@@ -38,7 +38,7 @@ The workshop also included precise hands-on demonstrations using Pioon Medical L
     },
     {
       id: 2,
-      title: 'Proctology Workshop - May 1st, 2025, Sheraton Hotel, Cairo',
+      title: 'Proctology Workshop by Techsky Egypt on May 1st, 2025 at Sheraton Hotel, Cairo',
       description: `Techsky Egypt successfully hosted the Laser in Proctology Workshop at Sheraton Hotel, Cairo, featuring a comprehensive scientific program followed by hands-on surgical training.
 
 Led by Dr. Ibrahim El Ghozlany and Dr. Ehab Abdelqadir, the workshop covered key laser techniques including hemorrhoidoplasty, FILAC, and SILAC, with both theoretical insights and real-case practice using advanced 1470nm diode laser systems.
@@ -54,8 +54,8 @@ The event saw strong engagement from attending surgeons, reflecting Techsky Egyp
     },
     {
       id: 3,
-      title: 'K12 Facial Contouring Laser Workshop - Clinica Joelle',
-      description: `K12 Facial Contouring Laser workshop! From insightful live demonstrations to hands-on learning, the event was a true testament to how the K12 Laser from PIOON MEDICAL LASER and fibers by OPERON is revolutionizing aesthetic treatments.
+      title: 'K12 Facial Contouring Laser Workshop!',
+      description: `From insightful live demonstrations to hands-on learning, the event was a true testament to how the K12 Laser from PIOON MEDICAL LASER and fibers by OPERON is revolutionizing aesthetic treatments.
 
 This advanced device is helping doctors deliver precision, safety, and outstanding results to their patients like never before!
 
@@ -71,10 +71,8 @@ And of course, a huge thank you to Clinica Joelle for hosting us in such a welco
     },
     {
       id: 4,
-      title: 'Proctology Workshop - October 29th, Al-Azhar University, Assiut',
-      description: `On Tuesday, October 29th, at Al-Azhar University, Assiut - Department of General Surgery.
-
-The workshop highlighted the latest advancements in laser technology for the treatment of anorectal diseases, showcasing the capabilities of the advanced Pioon Medical Laser system in improving patient comfort and accelerating recovery.
+      title: 'Proctology Workshop On Tuesday, October 29th, at Al-Azhar University, Assiut - Department of General Surgery',
+      description: `The workshop highlighted the latest advancements in laser technology for the treatment of anorectal diseases, showcasing the capabilities of the advanced Pioon Medical Laser system in improving patient comfort and accelerating recovery.
 
 Participants attended live demonstrations and explored innovative laser applications that significantly reduce pain and postoperative complications compared to conventional surgical methods.
 
@@ -88,7 +86,7 @@ The event provided a highly interactive and hands-on educational experience and 
     },
     {
       id: 5,
-      title: 'Lasers in Proctology Workshop - October 3rd & 4th, 2024',
+      title: 'workshop on Lasers in Proctology, held on October 3&4, 2024!',
       description: `We're excited to share the success of our first day & second day workshop on Lasers in Proctology, held on October 3 & 4, 2024!
 
 Led by Dr. Ibrahim El Ghozlany and Dr. Ehab Abdelkadir, attendees gained powerful insights into the latest advancements in laser technology.
@@ -105,10 +103,8 @@ The feedback has been overwhelmingly positive, highlighting the informative natu
     },
     {
       id: 6,
-      title: 'Techsky Egypt Proctology Workshop',
-      description: `Techsky Egypt and PIOON MEDICAL LASER and fibers by OPERON in Proctology Workshop.
-
-The workshop was led by Dr. Ibrahim El Ghozlany and Dr. Ehab Abdelqadir, who guided participants through a solid theoretical foundation and practical insights into modern laser proctology techniques.
+      title: 'Techsky Egypt and PIOON MEDICAL LASER and fibers by OPERON in Proctology Workshop',
+      description: `The workshop was led by Dr. Ibrahim El Ghozlany and Dr. Ehab Abdelqadir, who guided participants through a solid theoretical foundation and practical insights into modern laser proctology techniques.
 
 Attendees gained hands-on exposure to minimally invasive procedures using advanced surgical laser systems, alongside demonstrations of high-precision laser fibers that enhance surgical control and efficiency.
 
