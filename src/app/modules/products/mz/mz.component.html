@@ -1,0 +1,203 @@
+<!-- ===== HERO ===== -->
+<section id="home" class="mz-hero">
+
+  <!-- Full-width background image -->
+  <img src="../../../../assets/images/mz/MZ/MZ 1.svg"
+       alt="MZ Surgical Laser System" class="mz-hero-bg" />
+
+  <!-- Text overlaid on the left -->
+  <div class="container mz-hero-body">
+    <div class="mz-hero-content">
+      <h1 class="mz-hero-title">MZ Surgical Laser System</h1>
+      <p class="mz-hero-subtitle">
+        Designed to maximize tissue selectivity, reduce thermal spread,
+        and support predictable clinical results
+      </p>
+      <div class="mz-hero-actions">
+        <a href="https://wa.me/+201019421666" class="mz-btn mz-btn-solid">Book Demo</a>
+        <a href="assets/images/mz/MZ-surgery-laser-1940nm-brochure.pdf"
+           download="MZ-surgery-laser-1940nm-brochure.pdf"
+           class="mz-btn mz-btn-border">
+          <i class="fa fa-download" aria-hidden="true"></i>
+          Download Brochure
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ===== DEVICE OVERVIEW ===== -->
+<section id="m2-accessories" class="m2-accessories">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+
+      <div class="col-md-6 col-sm-12">
+        <img class="mz-device-img" src="../../../../assets/images/mz/1/1.svg"
+             alt="MZ Surgical Laser System" />
+      </div>
+
+      <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+        <div class="do-copy">
+          <h2 class="do-title">
+            <span class="do-title-accent">Device</span> Overview
+          </h2>
+          <ul class="do-list">
+            <li>Model: MZ Surgical Laser System</li>
+            <li>Wavelengths: 1940nm</li>
+            <li>Power: 10W</li>
+            <li>Modes: Continuous, wave (cw)/pulsed</li>
+            <li>Touchscreen: 8.8-inch Ultra-wide screen</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== CLINICAL APPLICATIONS ===== -->
+<section id="products" class="mz-clinical-section bg-blue">
+  <div class="container">
+
+    <div class="mz-clinical-title wow fadeInUp" data-wow-delay="0.1s">
+      <h2 class="do-title do-title-sec">
+        <span class="do-title-accent">Clinical</span> Applications
+      </h2>
+    </div>
+
+    <div class="row g-4" style="display: flex;justify-content: center;">
+
+      <div class="col-lg-4 col-md-5 col-6">
+        <div class="mz-ca-card wow fadeInUp" data-wow-delay="0.3s">
+          <div class="mz-ca-img-wrap">
+            <img src="../../../../assets/images/mz/2/EVLT.svg" alt="EVLT" />
+          </div>
+          <div class="mz-ca-body">
+            <h3 class="mz-ca-title">EVLT</h3>
+            <p class="mz-ca-text">Varicose veins occur when valves in the veins fail, leading to blood pooling and vessel enlargement.</p>
+            <a routerLink="/clinical-application" class="mz-ca-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-5 col-6">
+        <div class="mz-ca-card wow fadeInUp" data-wow-delay="0.5s">
+          <div class="mz-ca-img-wrap">
+            <img src="../../../../assets/images/mz/2/Proctology.svg" alt="Proctology" />
+          </div>
+          <div class="mz-ca-body">
+            <h3 class="mz-ca-title">Proctology</h3>
+            <p class="mz-ca-text">Proctological conditions such as hemorrhoids, anal fistula, and fissures cause pain, bleeding, and discomfort.</p>
+            <a routerLink="/clinical-application" class="mz-ca-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== RESULTS & TRAINING ===== -->
+<section id="m2-accessories-info" class="m2-accessories">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+
+      <div class="col-md-6 col-sm-12">
+        <div class="mz-media-block">
+          <img src="../../../../assets/images/mz/5/image 6.svg"
+               alt="MZ Training visual" class="mz-training-img" />
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+        <div class="rt-copy">
+          <h2 class="rt-title">
+            <span class="rt-accent">Results&nbsp;&amp;</span> Training
+          </h2>
+          <h3 class="rt-subtitle">What to expect in training</h3>
+          <ul class="rt-list">
+            <li>Hands-on fiber setup</li>
+            <li>Ultrasound guidance tips</li>
+            <li>Real case demonstration</li>
+          </ul>
+          <a href="https://wa.me/+201019421666" class="rt-btn">Join our Workshop</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== ACCESSORIES CAROUSEL ===== -->
+<section id="products-card" class="m2-products m2-products-card bg-blue">
+  <div class="container">
+    <div class="row g-3">
+
+      <div class="col-md-12 col-sm-12">
+        <div class="section-title wow fadeInUp" style="padding-bottom: 40px;" data-wow-delay="0.1s">
+          <h2 class="do-title do-title-sec">
+            <span class="do-title-accent">Accessories</span>
+          </h2>
+        </div>
+      </div>
+
+      <owl-carousel-o [options]="carouselOpts">
+        <ng-container *ngFor="let item of accessories">
+          <ng-template carouselSlide>
+            <div class="news-thumb products-card">
+              <img [src]="item.img" [alt]="item.title" />
+              <div class="news-info news-info-products">
+                <h3>{{ item.title }}</h3>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== FINAL CTA ===== -->
+<section class="k12-hero mz-cta-hero">
+  <div class="container">
+    <div class="hero-card mz-cta-card">
+      <div class="row align-items-center gx-4 hero-wrap">
+
+        <div class="col-lg-7 col-md-7">
+          <div class="hero-content">
+            <h1 class="hero-title hero-plus-title">
+              Harness the clinical power of<br />
+              1940nm in a single,<br />
+              precision&#8209;engineered platform
+            </h1>
+            <div class="hero-actions">
+              <a href="https://wa.me/+201019421666" class="btn btn-primary">Book Demo</a>
+              <a href="assets/images/mz/MZ-surgery-laser-1940nm-brochure.pdf"
+                 download="MZ-surgery-laser-1940nm-brochure.pdf"
+                 class="btn btn-outline">
+                <span class="btn-icon" aria-hidden="true">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                </span>
+                Download Brochure
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-5 device-image">
+          <figure class="device-card" aria-label="MZ Surgical Laser System">
+            <img src="../../../../assets/images/mz/5/5.svg" alt="MZ Surgical Laser System" />
+          </figure>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

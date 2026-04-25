@@ -6,6 +6,7 @@ import { LaserFiberComponent } from "./laser-fiber/laser-fiber.component";
 import { AccessoriesComponent } from "./accessories/accessories.component";
 import { S1ProPlusComponent } from "./s1-pro-plus/s1-pro-plus.component";
 import { K12Component } from "./k12/k12.component";
+import { MzComponent } from "./mz/mz.component";
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'k12',
     component: K12Component
+  },
+  {
+    path: 'mz',
+    component: MzComponent
   }
 ]
 @NgModule({

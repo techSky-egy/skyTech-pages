@@ -335,6 +335,12 @@ header span.date-icon {
   padding-left: 19px;
 }
 
+header span.address-icon {
+  font-size: 12px;
+  padding: 11px 10px;
+  white-space: nowrap;
+}
+
 header span i {
   color: #05a9ca;
   margin-right: 5px;
@@ -906,6 +912,7 @@ footer a:hover {
   text-align: center;
   margin-right: 5px;
   margin-bottom: 2px;
+  min-width: 35px;
 }
 
 .latest-stories {

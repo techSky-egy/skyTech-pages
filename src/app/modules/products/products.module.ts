@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { S1ProPlusComponent } from './s1-pro-plus/s1-pro-plus.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { K12Component } from './k12/k12.component';
+import { MzComponent } from './mz/mz.component';
 
 
 
@@ -19,7 +20,8 @@ import { K12Component } from './k12/k12.component';
     LaserFiberComponent,
     AccessoriesComponent,
     S1ProPlusComponent,
-    K12Component
+    K12Component,
+    MzComponent
   ],
   imports: [
     CommonModule,
